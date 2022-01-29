@@ -11,14 +11,15 @@ def matrixMultiply(arr1,arr2):
         return "Invalid Input"
     for i in range(n):
         for j in range(m):
-            for k in range(m):
-                ans[i][j]+=arr1[i][k]*arr2[k][i]
+            for k in range(n1):
+                ans[i][j]+=arr1[i][k]*arr2[k][j]
     print(ans)
 
-matrixMultiply([[12, 7, 3],
-    [4, 5, 6],
-    [7, 8, 9]],
+matrixMultiply(
+    [[1, 7, 3],
+     [3, 5, 6],
+     [6, 8, 9]],
     
-    [[5, 8, 1, 2],
-    [6, 7, 3, 0],
-    [4, 5, 9, 1]])
+    [[1, 1, 1, 2],
+     [6, 7, 3, 0],
+     [4, 5, 9, 1]])
