@@ -7,5 +7,5 @@ def minInRotatedSortedArr(arr):
 
         if mid>0 and mid<len(arr)-1 and arr[mid-1]>arr[mid] and arr[mid+1]>arr[mid]:
             return mid
-        if mid>0 and 
+        # if mid>0 and 
         
