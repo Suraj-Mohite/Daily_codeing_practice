@@ -17,4 +17,4 @@ def firstAndLastOccurance(arr,num):
         if arr[mid]<num:
             start=mid+1
 
-firstAndLastOccurance([100],100)
+firstAndLastOccurance([100,101],101)
